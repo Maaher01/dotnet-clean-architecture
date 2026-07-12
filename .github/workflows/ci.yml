@@ -1,0 +1,12 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  backend:
+    runs_on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@4
+      - uses: actions/setup-dotnet@4
+        with: { dotnet-version: "8.0.x" }
+      - run: dotnet-restore
+      - run: dotnet build --no-restore
+      - run: dotnet test --no-build

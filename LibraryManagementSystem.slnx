@@ -3,5 +3,4 @@
   <Project Path="LibraryManagementSystem.Application/LibraryManagementSystem.Application.csproj" Id="cf0c88e3-ab27-4421-9d7f-cb5bbcef5c96" />
   <Project Path="LibraryManagementSystem.Domain/LibraryManagementSystem.Domain.csproj" Id="c256909c-ded7-407d-9a1a-9675d084d716" />
   <Project Path="LibraryManagementSystem.Persistence/LibraryManagementSystem.Persistence.csproj" Id="e198560d-769b-4c00-be81-7adbb9836f8f" />
-  <Project Path="LibraryManagementSystem.Tests/LibraryManagementSystem.Tests.csproj" />
 </Solution>
