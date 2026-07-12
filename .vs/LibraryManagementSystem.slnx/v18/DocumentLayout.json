@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\LibraryManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.api\\contollers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|solutionrelative:librarymanagementsystem.api\\contollers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.application\\dtos\\borrow\\borrowrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|solutionrelative:librarymanagementsystem.application\\dtos\\borrow\\borrowrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.application\\dtos\\borrow\\borrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|solutionrelative:librarymanagementsystem.application\\dtos\\borrow\\borrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BorrowDto.cs",
+              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\DTOs\\Borrow\\BorrowDto.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Application\\DTOs\\Borrow\\BorrowDto.cs",
+              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\DTOs\\Borrow\\BorrowDto.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Application\\DTOs\\Borrow\\BorrowDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T08:07:30.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BorrowRequestDto.cs",
+              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\DTOs\\Borrow\\BorrowRequestDto.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Application\\DTOs\\Borrow\\BorrowRequestDto.cs",
+              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\DTOs\\Borrow\\BorrowRequestDto.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Application\\DTOs\\Borrow\\BorrowRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T08:07:26.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BorrowsController.cs",
+              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T08:05:35.634Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

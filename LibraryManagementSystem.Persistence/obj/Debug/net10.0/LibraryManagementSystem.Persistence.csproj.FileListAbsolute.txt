@@ -1,0 +1,17 @@
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\bin\Debug\net10.0\LibraryManagementSystem.Persistence.deps.json
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\bin\Debug\net10.0\LibraryManagementSystem.Persistence.runtimeconfig.json
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\bin\Debug\net10.0\LibraryManagementSystem.Persistence.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\bin\Debug\net10.0\LibraryManagementSystem.Persistence.pdb
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\bin\Debug\net10.0\LibraryManagementSystem.Domain.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\bin\Debug\net10.0\LibraryManagementSystem.Domain.pdb
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.csproj.AssemblyReference.cache
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.AssemblyInfoInputs.cache
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.AssemblyInfo.cs
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.csproj.CoreCompileInputs.cache
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryM.B0BC7714.Up2Date
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\refint\LibraryManagementSystem.Persistence.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.pdb
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.genruntimeconfig.cache
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\ref\LibraryManagementSystem.Persistence.dll

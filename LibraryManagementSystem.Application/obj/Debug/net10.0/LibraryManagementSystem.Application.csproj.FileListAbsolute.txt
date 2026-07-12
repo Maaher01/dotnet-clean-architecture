@@ -1,0 +1,15 @@
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\bin\Debug\net10.0\LibraryManagementSystem.Application.deps.json
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\bin\Debug\net10.0\LibraryManagementSystem.Application.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\bin\Debug\net10.0\LibraryManagementSystem.Application.pdb
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\bin\Debug\net10.0\LibraryManagementSystem.Domain.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\bin\Debug\net10.0\LibraryManagementSystem.Domain.pdb
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryManagementSystem.Application.csproj.AssemblyReference.cache
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryManagementSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryManagementSystem.Application.AssemblyInfoInputs.cache
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryManagementSystem.Application.AssemblyInfo.cs
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryManagementSystem.Application.csproj.CoreCompileInputs.cache
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryM.F8D78A19.Up2Date
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryManagementSystem.Application.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\refint\LibraryManagementSystem.Application.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryManagementSystem.Application.pdb
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\ref\LibraryManagementSystem.Application.dll
