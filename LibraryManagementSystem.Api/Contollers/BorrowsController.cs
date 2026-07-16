@@ -66,5 +66,20 @@ namespace LibraryManagementSystem.Api.Contollers
 
             return Ok();
         }
+
+        [HttpPut("{id}/extend")]
+        [Authorize(Roles = "Admin,Librarian")]
+        public async Task<IActionResult> ExtendDueDate(int id, [FromBody] ExtendDueDateDto dto)
+        {
+            try
+            {
+                await _borrowService.ExtendDueDateAsync(id, dto.NewDueDate);
+                return Ok();
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
     }
 }

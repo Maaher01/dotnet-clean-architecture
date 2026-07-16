@@ -7,5 +7,6 @@ namespace LibraryManagementSystem.Application.Interfaces
         Task BorrowBookAsync(int memberId, int bookId);
         Task ReturnBookAsync(int memberId, int bookId);
         Task<IEnumerable<BorrowDto>> GetOverdueBorrowsAsync();
+        Task ExtendDueDateAsync(int borrowId, DateTime newDueDate);
     }
 }

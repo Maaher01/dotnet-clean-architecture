@@ -43,6 +43,15 @@ namespace LibraryManagementSystem.Application.Services
             await _uow.SaveChangesAsync();
         }
 
+        public async Task ExtendDueDateAsync(int borrowId, DateTime newDueDate)
+        {
+            var borrow = await _borrows.GetByIdAsync(borrowId) ?? throw new Exception("Borrow not found.");
+
+            borrow.ExtendDueDate(newDueDate);
+            await _borrows.UpdateAsync(borrow);
+            await _uow.SaveChangesAsync();
+        }
+
         public async Task<IEnumerable<BorrowDto>> GetOverdueBorrowsAsync()
         {
             return (await _borrows.GetOverdueAsync()).Select(b => new BorrowDto

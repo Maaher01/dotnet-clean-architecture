@@ -20,6 +20,12 @@
 
         public void Update(string title, string author, int totalCopies)
         {
+            if (totalCopies < 0) throw new InvalidOperationException("Total copies cannot be negative.");
+
+            if (totalCopies < (TotalCopies - AvailableCopies)) 
+                throw new InvalidOperationException($"Cannot reduce total copies below the number currently borrowed. " +
+                    $"{TotalCopies - AvailableCopies} copies are currently out on loan.");
+
             Title = title;
             Author = author;
             TotalCopies = totalCopies;

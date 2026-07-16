@@ -138,6 +138,27 @@
   },
   {
     "ContainingType": "LibraryManagementSystem.Api.Contollers.BorrowsController",
+    "Method": "ExtendDueDate",
+    "RelativePath": "api/Borrows/{id}/extend",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "LibraryManagementSystem.Application.DTOs.Borrow.ExtendDueDateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementSystem.Api.Contollers.BorrowsController",
     "Method": "GetOverdueBorrows",
     "RelativePath": "api/Borrows/overdue",
     "HttpMethod": "GET",

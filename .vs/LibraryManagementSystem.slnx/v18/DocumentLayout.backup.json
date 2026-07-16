@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.api\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|solutionrelative:librarymanagementsystem.api\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.api\\contollers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|solutionrelative:librarymanagementsystem.api\\contollers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IdentityExtensions.cs",
-              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Extensions\\IdentityExtensions.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem.Api\\Extensions\\IdentityExtensions.cs",
-              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Extensions\\IdentityExtensions.cs",
-              "RelativeToolTip": "LibraryManagementSystem.Api\\Extensions\\IdentityExtensions.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAcAAAAAAAAAA==",
+              "Title": "BorrowsController.cs",
+              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T11:48:37.328Z",
+              "WhenOpened": "2026-07-16T14:17:52.083Z",
               "EditorCaption": ""
             }
           ]

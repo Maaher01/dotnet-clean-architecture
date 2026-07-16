@@ -28,6 +28,11 @@ namespace LibraryManagementSystem.Persistence.Repositories
                 .FirstOrDefaultAsync(b => b.MemberId == memberId && b.BookId == bookId && b.ReturnedAt == null);
         }
 
+        public async Task<Borrow?> GetByIdAsync(int id)
+        {
+            return await _context.Borrows.FindAsync(id);
+        }
+
         public async Task AddAsync(Borrow borrow)
         {
             await _context.Borrows.AddAsync(borrow);

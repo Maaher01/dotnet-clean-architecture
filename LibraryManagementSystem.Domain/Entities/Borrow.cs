@@ -27,5 +27,14 @@
             if (IsReturned()) throw new InvalidOperationException("This book has already been returned.");
             ReturnedAt = DateTime.UtcNow;
         }
+
+        public void ExtendDueDate(DateTime newDueDate)
+        {
+            if (IsReturned()) throw new InvalidOperationException("Cannot extend due date of a returned book.");
+
+            if (newDueDate <= DueDate) throw new InvalidOperationException("New due date must be later than the current due date.");
+
+            DueDate = newDueDate;
+        }
     }
 }
