@@ -15,3 +15,4 @@ D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0
 D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.pdb
 D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.genruntimeconfig.cache
 D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\ref\LibraryManagementSystem.Persistence.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Persistence\obj\Debug\net10.0\LibraryManagementSystem.Persistence.sourcelink.json

@@ -137,7 +137,7 @@ namespace LibraryManagementSystem.Persistence.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int>("MemberId")
+                    b.Property<int?>("MemberId")
                         .HasColumnType("int");
 
                     b.Property<string>("NormalizedEmail")
@@ -319,9 +319,7 @@ namespace LibraryManagementSystem.Persistence.Migrations
                 {
                     b.HasOne("LibraryManagementSystem.Domain.Entities.Member", "Member")
                         .WithMany()
-                        .HasForeignKey("MemberId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MemberId");
 
                     b.Navigation("Member");
                 });

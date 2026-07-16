@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace LibraryManagementSystem.Persistence.DependencyInjection
+namespace LibraryManagementSystem.Persistence
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddPersistenseServices(this IServiceCollection services, IConfiguration config)
+        public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration config)
         {
             services.AddDbContext<LibraryDbContext>(options =>
                 options.UseSqlServer(config.GetConnectionString("LibraryDBCon"))

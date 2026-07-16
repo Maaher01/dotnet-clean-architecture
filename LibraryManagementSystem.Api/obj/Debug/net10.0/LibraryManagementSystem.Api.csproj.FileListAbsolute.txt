@@ -6,15 +6,12 @@ D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\Library
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\LibraryManagementSystem.Api.runtimeconfig.json
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\LibraryManagementSystem.Api.dll
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\LibraryManagementSystem.Api.pdb
-D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
-D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.csproj.AssemblyReference.cache
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.GeneratedMSBuildEditorConfig.editorconfig
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.AssemblyInfoInputs.cache
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.AssemblyInfo.cs
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.csproj.CoreCompileInputs.cache
-D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.MvcApplicationPartsAssemblyInfo.cs
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
@@ -164,4 +161,5 @@ D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\ru\Micr
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.sourcelink.json
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

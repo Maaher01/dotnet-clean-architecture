@@ -12,7 +12,12 @@ namespace LibraryManagementSystem.Api.Extensions
         public static IServiceCollection AddIdentity(this IServiceCollection services)
         {
             services
-                .AddIdentity<ApplicationUser, IdentityRole>()
+                .AddIdentityCore<ApplicationUser>(options => 
+                {
+                    options.Password.RequireDigit = true;
+                    options.Password.RequiredLength = 7;
+                })
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<LibraryDbContext>()
                 .AddDefaultTokenProviders();
 

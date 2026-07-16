@@ -1,5 +1,6 @@
 ﻿using LibraryManagementSystem.Application.DTOs.Books;
-using LibraryManagementSystem.Application.Services;
+using LibraryManagementSystem.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryManagementSystem.Api.Contollers
@@ -16,6 +17,7 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> GetAll()
         {
             var books = await _bookService.GetAllAsync();
@@ -23,6 +25,7 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpGet("available")]
+        [Authorize]
         public async Task<IActionResult> GetAvailable()
         {
             var books = await _bookService.GetAvailableBooksAsync();
@@ -30,6 +33,7 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> AddBook([FromBody] BookCreateUpdateDto dto)
         {
             await _bookService.AddBookAsync(dto);
@@ -37,6 +41,7 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> UpdateBook(int id, [FromBody] BookCreateUpdateDto dto)
         {
             await _bookService.UpdateBookAsync(id, dto);
@@ -44,6 +49,7 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> DeleteBook(int id)
         {
             await _bookService.DeleteBookAsync(id);

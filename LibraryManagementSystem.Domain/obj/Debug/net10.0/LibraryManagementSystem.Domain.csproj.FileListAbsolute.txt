@@ -9,3 +9,4 @@ D:\LibraryManagementSystem\LibraryManagementSystem.Domain\obj\Debug\net10.0\Libr
 D:\LibraryManagementSystem\LibraryManagementSystem.Domain\obj\Debug\net10.0\refint\LibraryManagementSystem.Domain.dll
 D:\LibraryManagementSystem\LibraryManagementSystem.Domain\obj\Debug\net10.0\LibraryManagementSystem.Domain.pdb
 D:\LibraryManagementSystem\LibraryManagementSystem.Domain\obj\Debug\net10.0\ref\LibraryManagementSystem.Domain.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Domain\obj\Debug\net10.0\LibraryManagementSystem.Domain.sourcelink.json

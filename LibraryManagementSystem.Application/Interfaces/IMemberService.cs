@@ -1,14 +1,12 @@
 ﻿using LibraryManagementSystem.Application.DTOs.Member;
-using LibraryManagementSystem.Domain.Entities;
 
-namespace LibraryManagementSystem.Application.Services
+namespace LibraryManagementSystem.Application.Interfaces
 {
     public interface IMemberService
     {
         Task<IEnumerable<MemberDto>> GetAllAsync();
         Task <MemberDto> GetByIdAsync(int id);
-        Task AddMemberAsync(MemberCreateUpdateDto dto);
-        Task UpdateMemberAsync(int id, MemberCreateUpdateDto dto);
+        Task UpdateMemberAsync(int id, MemberUpdateDto dto);
         Task DeactivateMemberAsync(int id);
         Task ActivateMemberAsync(int id);
     }

@@ -1,6 +1,6 @@
 ﻿using LibraryManagementSystem.Application.DTOs.Member;
 using LibraryManagementSystem.Domain.Interfaces;
-using LibraryManagementSystem.Domain.Entities;
+using LibraryManagementSystem.Application.Interfaces;
 
 namespace LibraryManagementSystem.Application.Services
 {
@@ -42,18 +42,7 @@ namespace LibraryManagementSystem.Application.Services
             };
         }
 
-        public async Task AddMemberAsync(MemberCreateUpdateDto dto)
-        {
-            var existing = await _members.GetByEmailAsync(dto.Email);
-            if (existing != null) throw new InvalidOperationException("A member with this email already exists.");
-
-            var member = new Member(dto.FirstName, dto.LastName, dto.Email, dto.PhoneNumber);
-
-            await _members.AddAsync(member);
-            await _uow.SaveChangesAsync();
-        }
-
-        public async Task UpdateMemberAsync(int id, MemberCreateUpdateDto dto)
+        public async Task UpdateMemberAsync(int id, MemberUpdateDto dto)
         {
             var member = await _members.GetByIdAsync(id) ?? throw new Exception("Member not found.");
             

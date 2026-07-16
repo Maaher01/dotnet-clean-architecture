@@ -1,6 +1,7 @@
 ﻿using LibraryManagementSystem.Domain.Interfaces;
 using LibraryManagementSystem.Domain.Entities;
 using LibraryManagementSystem.Application.DTOs.Books;
+using LibraryManagementSystem.Application.Interfaces;
 
 namespace LibraryManagementSystem.Application.Services
 {

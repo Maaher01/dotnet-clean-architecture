@@ -13,3 +13,6 @@ D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0
 D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\refint\LibraryManagementSystem.Application.dll
 D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryManagementSystem.Application.pdb
 D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\ref\LibraryManagementSystem.Application.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\obj\Debug\net10.0\LibraryManagementSystem.Application.sourcelink.json
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\bin\Debug\net10.0\LibraryManagementSystem.Persistence.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Application\bin\Debug\net10.0\LibraryManagementSystem.Persistence.pdb

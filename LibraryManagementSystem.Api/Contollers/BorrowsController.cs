@@ -1,6 +1,8 @@
 ﻿using LibraryManagementSystem.Application.DTOs.Borrow;
-using LibraryManagementSystem.Application.Services;
+using LibraryManagementSystem.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace LibraryManagementSystem.Api.Contollers
 {
@@ -16,6 +18,7 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpGet("overdue")]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> GetOverdueBorrows()
         {
             var overdueBorrows = await _borrowService.GetOverdueBorrowsAsync();
@@ -23,16 +26,44 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Borrow([FromBody] BorrowRequestDto dto)
         {
-            await _borrowService.BorrowBookAsync(dto.MemberId, dto.BookId);
+            var userRole = User.FindFirstValue(ClaimTypes.Role);
+            var memberId = User.FindFirstValue("memberId");
+
+            if (userRole == "Member")
+            {
+                if (memberId == null) return Unauthorized();
+
+                await _borrowService.BorrowBookAsync(int.Parse(memberId!), dto.BookId);
+            }
+            else
+            {
+                await _borrowService.BorrowBookAsync(dto.MemberId!.Value, dto.BookId);
+            }
+
             return Ok();
         }
 
         [HttpPost("return")]
+        [Authorize]
         public async Task<IActionResult> Return([FromBody] BorrowRequestDto dto)
         {
-            await _borrowService.ReturnBookAsync(dto.MemberId, dto.BookId);
+            var userRole = User.FindFirstValue(ClaimTypes.Role);
+            var memberId = User.FindFirstValue("memberId");
+
+            if (userRole == "Member")
+            {
+                if (memberId == null) return Unauthorized();
+
+                await _borrowService.ReturnBookAsync(int.Parse(memberId!), dto.BookId);
+            }
+            else
+            {
+                await _borrowService.ReturnBookAsync(dto.MemberId!.Value, dto.BookId);
+            }
+
             return Ok();
         }
     }

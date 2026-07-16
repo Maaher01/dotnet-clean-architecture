@@ -1,6 +1,6 @@
 ﻿using LibraryManagementSystem.Application.DTOs.Borrow;
 
-namespace LibraryManagementSystem.Application.Services
+namespace LibraryManagementSystem.Application.Interfaces
 {
     public interface IBorrowService
     {

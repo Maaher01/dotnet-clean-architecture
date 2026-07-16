@@ -1,5 +1,6 @@
 ﻿using LibraryManagementSystem.Application.DTOs.Member;
-using LibraryManagementSystem.Application.Services;
+using LibraryManagementSystem.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryManagementSystem.Api.Contollers
@@ -16,6 +17,7 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> GetAll()
         {
             var members = await _memberService.GetAllAsync();
@@ -23,6 +25,7 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> GetById(int id)
         {
             var member = await _memberService.GetByIdAsync(id);
@@ -33,22 +36,16 @@ namespace LibraryManagementSystem.Api.Contollers
             return Ok(member);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] MemberCreateUpdateDto dto)
-        {
-            await _memberService.AddMemberAsync(dto);
-
-            return CreatedAtAction(nameof(GetAll), null);
-        }
-
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] MemberCreateUpdateDto dto)
+        [Authorize(Roles = "Admin,Librarian")]
+        public async Task<IActionResult> Put(int id, [FromBody] MemberUpdateDto dto)
         {
             await _memberService.UpdateMemberAsync(id, dto);
             return Ok();
         }
 
         [HttpPut("{id}/deactivate")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Deactivate(int id)
         {
             await _memberService.DeactivateMemberAsync(id);
@@ -56,6 +53,7 @@ namespace LibraryManagementSystem.Api.Contollers
         }
 
         [HttpPut("{id}/activate")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Activate(int id)
         {
             await _memberService.ActivateMemberAsync(id);
