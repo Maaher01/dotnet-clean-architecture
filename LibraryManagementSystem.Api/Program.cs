@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using LibraryManagementSystem.Api.Extensions;
 using LibraryManagementSystem.Application;
 using LibraryManagementSystem.Persistence;
@@ -5,6 +6,7 @@ using LibraryManagementSystem.Persistence;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddPersistenceServices(builder.Configuration)
                 .AddApplicationServices()
                 .AddIdentity()

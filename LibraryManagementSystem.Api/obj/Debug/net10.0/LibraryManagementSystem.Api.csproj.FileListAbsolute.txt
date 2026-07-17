@@ -163,3 +163,7 @@ D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\zh-Hans
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.sourcelink.json
 D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\FluentValidation.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\LibraryManagementSystem\LibraryManagementSystem.Api\obj\Debug\net10.0\LibraryManagementSystem.Api.MvcApplicationPartsAssemblyInfo.cs

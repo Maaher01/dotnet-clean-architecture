@@ -10,10 +10,12 @@ namespace LibraryManagementSystem.Persistence
     {
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration config)
         {
+            // DB Connection
             services.AddDbContext<LibraryDbContext>(options =>
                 options.UseSqlServer(config.GetConnectionString("LibraryDBCon"))
             );
 
+            // Repositories
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<IBorrowRepository, BorrowRepository>();
             services.AddScoped<IMemberRepository, MemberRepository>();
