@@ -2,9 +2,6 @@
 using LibraryManagementSystem.Application.Interfaces;
 using LibraryManagementSystem.Application.Services;
 using LibraryManagementSystem.Application.Validators.Auth;
-using LibraryManagementSystem.Application.Validators.Book;
-using LibraryManagementSystem.Application.Validators.Borrow;
-using LibraryManagementSystem.Application.Validators.Member;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LibraryManagementSystem.Application
@@ -20,12 +17,8 @@ namespace LibraryManagementSystem.Application
             services.AddScoped<IBorrowService, BorrowService>();
             services.AddScoped<IMemberService, MemberService>();
 
-            // Validators
+            // Validator
             services.AddValidatorsFromAssemblyContaining<RegisterDtoValidator>();
-            services.AddValidatorsFromAssemblyContaining<LoginDtoValidator>();
-            services.AddValidatorsFromAssemblyContaining<BookCreateUpdateDtoValidator>();
-            services.AddValidatorsFromAssemblyContaining<ExtendDueDateDtoValidator>();
-            services.AddValidatorsFromAssemblyContaining<MemberUpdateDtoValidator>();
 
             return services;
         }
