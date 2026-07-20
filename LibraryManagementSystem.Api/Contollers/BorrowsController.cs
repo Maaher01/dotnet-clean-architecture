@@ -17,12 +17,47 @@ namespace LibraryManagementSystem.Api.Contollers
             _borrowService = borrowService;
         }
 
+        [HttpGet]
+        [Authorize(Roles = "Admin,Librarian")]
+        public async Task<IActionResult> GetAllBorrows()
+        {
+            var allBorrows = await _borrowService.GetAllBorrowsAsync();
+            return Ok(allBorrows);
+        }
+
+        [HttpGet("{borrowId}")]
+        [Authorize]
+        public async Task<IActionResult> GetBorrowById(int borrowId)
+        {
+            var borrow = await _borrowService.GetBorrowByIdAsync(borrowId);
+            return Ok(borrow);
+        }
+
+        [HttpGet("current")]
+        [Authorize(Roles = "Admin,Librarian")]
+        public async Task<IActionResult> GetCurrentBorrows()
+        {
+            var currentBorrows = await _borrowService.GetCurrentBorrowsAsync();
+            return Ok(currentBorrows);
+        }
+
         [HttpGet("overdue")]
         [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> GetOverdueBorrows()
         {
             var overdueBorrows = await _borrowService.GetOverdueBorrowsAsync();
             return Ok(overdueBorrows);
+        }
+
+        [HttpGet("my")]
+        [Authorize]
+        public async Task<IActionResult> GetMemberBorrows()
+        {
+            var memberId = User.FindFirstValue("memberId");
+            if(memberId == null) return Unauthorized();
+
+            var memberBorrows = await _borrowService.GetMyBorrowsAsync(int.Parse(memberId));
+            return Ok(memberBorrows);
         }
 
         [HttpPost]
@@ -71,15 +106,24 @@ namespace LibraryManagementSystem.Api.Contollers
         [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> ExtendDueDate(int id, [FromBody] ExtendDueDateDto dto)
         {
-            try
-            {
-                await _borrowService.ExtendDueDateAsync(id, dto.NewDueDate);
-                return Ok();
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
+            await _borrowService.ExtendDueDateAsync(id, dto.NewDueDate);
+            return Ok();
+        }
+
+        [HttpGet("member/{memberId}")]
+        [Authorize(Roles = "Admin,Librarian")]
+        public async Task<IActionResult> GetByMember(int memberId)
+        {
+            var borrows = await _borrowService.GetByMemberIdAsync(memberId);
+            return Ok(borrows);
+        }
+
+        [HttpGet("book/{bookId}")]
+        [Authorize(Roles = "Admin,Librarian")]
+        public async Task<IActionResult> GetByBookId(int bookId)
+        {
+            var borrows = await _borrowService.GetByBookIdAsync(bookId);
+            return Ok(borrows);
         }
     }
 }

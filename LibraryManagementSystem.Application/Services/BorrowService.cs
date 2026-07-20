@@ -18,6 +18,64 @@ namespace LibraryManagementSystem.Application.Services
             _uow = uow;
         }
 
+        public async Task<IEnumerable<BorrowDto>> GetAllBorrowsAsync()
+        {
+            return (await _borrows.GetAllAsync()).Select(b => new BorrowDto
+            {
+                Id = b.Id,
+                BookId = b.BookId,
+                MemberId = b.MemberId,
+                BorrowedAt = b.BorrowedAt,
+                DueDate = b.DueDate,
+                ReturnedAt = b.ReturnedAt,
+                IsOverdue = b.IsOverdue()
+            });
+        }
+
+        public async Task<IEnumerable<BorrowDto>> GetCurrentBorrowsAsync()
+        {
+            return (await _borrows.GetCurrent()).Select(b => new BorrowDto
+            {
+                Id = b.Id,
+                BookId = b.BookId,
+                MemberId = b.MemberId,
+                BorrowedAt = b.BorrowedAt,
+                DueDate = b.DueDate,
+                ReturnedAt = b.ReturnedAt,
+                IsOverdue = b.IsOverdue()
+            });
+        }
+
+        public async Task<IEnumerable<BorrowDto>> GetOverdueBorrowsAsync()
+        {
+            return (await _borrows.GetOverdueAsync()).Select(b => new BorrowDto
+            {
+                Id = b.Id,
+                BookId = b.BookId,
+                MemberId = b.MemberId,
+                BorrowedAt = b.BorrowedAt,
+                DueDate = b.DueDate,
+                ReturnedAt = b.ReturnedAt,
+                IsOverdue = b.IsOverdue()
+            });
+        }
+
+        public async Task<BorrowDto> GetBorrowByIdAsync(int borrowId)
+        {
+            var borrow = await _borrows.GetByIdAsync(borrowId) ?? throw new Exception("Borrow not found.");
+
+            return new BorrowDto
+            {
+                Id = borrow.Id,
+                BookId = borrow.BookId,
+                MemberId = borrow.MemberId,
+                BorrowedAt = borrow.BorrowedAt,
+                DueDate = borrow.DueDate,
+                ReturnedAt = borrow.ReturnedAt,
+                IsOverdue = borrow.IsOverdue()
+            };
+        }
+
         public async Task BorrowBookAsync(int memberId, int bookId)
         {
             var book = await _books.GetByIdAsync(bookId) ?? throw new Exception("Book not found.");
@@ -52,9 +110,37 @@ namespace LibraryManagementSystem.Application.Services
             await _uow.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<BorrowDto>> GetOverdueBorrowsAsync()
+        public async Task<IEnumerable<BorrowDto>> GetByMemberIdAsync(int memberId)
         {
-            return (await _borrows.GetOverdueAsync()).Select(b => new BorrowDto
+            return (await _borrows.GetByMemberIdAsync(memberId)).Select(b => new BorrowDto
+            {
+                Id = b.Id,
+                BookId = b.BookId,
+                MemberId = b.MemberId,
+                BorrowedAt = b.BorrowedAt,
+                DueDate = b.DueDate,
+                ReturnedAt = b.ReturnedAt,
+                IsOverdue = b.IsOverdue()
+            });
+        }
+
+        public async Task<IEnumerable<BorrowDto>> GetMyBorrowsAsync(int memberId)
+        {
+            return (await _borrows.GetByMemberIdAsync(memberId)).Select(b => new BorrowDto
+            {
+                Id = b.Id,
+                BookId = b.BookId,
+                MemberId = b.MemberId,
+                BorrowedAt = b.BorrowedAt,
+                DueDate = b.DueDate,
+                ReturnedAt = b.ReturnedAt,
+                IsOverdue = b.IsOverdue()
+            });
+        }
+
+        public async Task<IEnumerable<BorrowDto>> GetByBookIdAsync(int bookId)
+        {
+            return (await _borrows.GetByBookIdAsync(bookId)).Select(b => new BorrowDto
             {
                 Id = b.Id,
                 BookId = b.BookId,

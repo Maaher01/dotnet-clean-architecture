@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|solutionrelative:librarymanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.application\\services\\borrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|solutionrelative:librarymanagementsystem.application\\services\\borrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|solutionrelative:librarymanagementsystem.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.application\\interfaces\\iborrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|solutionrelative:librarymanagementsystem.application\\interfaces\\iborrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.api\\contollers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1F5EB40-F788-DBFA-E052-157B360A9F93}|LibraryManagementSystem.Api\\LibraryManagementSystem.Api.csproj|solutionrelative:librarymanagementsystem.api\\contollers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C256909C-DED7-407D-9A1A-9675D084D716}|LibraryManagementSystem.Domain\\LibraryManagementSystem.Domain.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.domain\\interfaces\\iborrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C256909C-DED7-407D-9A1A-9675D084D716}|LibraryManagementSystem.Domain\\LibraryManagementSystem.Domain.csproj|solutionrelative:librarymanagementsystem.domain\\interfaces\\iborrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E198560D-769B-4C00-BE81-7ADBB9836F8F}|LibraryManagementSystem.Persistence\\LibraryManagementSystem.Persistence.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.persistence\\repositories\\borrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E198560D-769B-4C00-BE81-7ADBB9836F8F}|LibraryManagementSystem.Persistence\\LibraryManagementSystem.Persistence.csproj|solutionrelative:librarymanagementsystem.persistence\\repositories\\borrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem.Application\\DependencyInjection.cs",
-              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\DependencyInjection.cs",
-              "RelativeToolTip": "LibraryManagementSystem.Application\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "BorrowsController.cs",
+              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Api\\Contollers\\BorrowsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T10:43:51.843Z",
+              "WhenOpened": "2026-07-20T13:57:39.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBorrowRepository.cs",
+              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Domain\\Interfaces\\IBorrowRepository.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Domain\\Interfaces\\IBorrowRepository.cs",
+              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Domain\\Interfaces\\IBorrowRepository.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Domain\\Interfaces\\IBorrowRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T13:41:50.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BorrowRepository.cs",
+              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Persistence\\Repositories\\BorrowRepository.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Persistence\\Repositories\\BorrowRepository.cs",
+              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Persistence\\Repositories\\BorrowRepository.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Persistence\\Repositories\\BorrowRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T13:42:18.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IBorrowService.cs",
+              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\Interfaces\\IBorrowService.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Application\\Interfaces\\IBorrowService.cs",
+              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\Interfaces\\IBorrowService.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Application\\Interfaces\\IBorrowService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T17:44:23.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Program.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem.Api\\Program.cs",
-              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Api\\Program.cs",
-              "RelativeToolTip": "LibraryManagementSystem.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Title": "BorrowService.cs",
+              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\Services\\BorrowService.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Application\\Services\\BorrowService.cs",
+              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\Services\\BorrowService.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Application\\Services\\BorrowService.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAzwEkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T08:13:56.067Z",
+              "WhenOpened": "2026-07-20T13:41:27.764Z",
               "EditorCaption": ""
             }
           ]

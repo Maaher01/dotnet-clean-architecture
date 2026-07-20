@@ -13,6 +13,18 @@ namespace LibraryManagementSystem.Persistence.Repositories
             _context = context;
         }
 
+        public async Task<IEnumerable<Borrow>> GetAllAsync()
+        {
+            return await _context.Borrows.ToListAsync();
+        }
+
+        public async Task<IEnumerable<Borrow>> GetCurrent()
+        {
+            return await _context.Borrows
+                .Where(b => b.ReturnedAt == null)
+                .ToListAsync();
+        }
+
         public async Task<IEnumerable<Borrow>> GetOverdueAsync()
         {
             var today = DateTime.UtcNow;
@@ -41,6 +53,20 @@ namespace LibraryManagementSystem.Persistence.Repositories
         public async Task UpdateAsync(Borrow borrow)
         {
             _context.Borrows.Update(borrow);
+        }
+
+        public async Task<IEnumerable<Borrow>> GetByMemberIdAsync(int memberId)
+        {
+            return await _context.Borrows
+                .Where(b => b.MemberId == memberId)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Borrow>> GetByBookIdAsync(int bookId)
+        {
+            return await _context.Borrows
+                .Where(b => b.BookId == bookId)
+                .ToListAsync();
         }
     }
 }

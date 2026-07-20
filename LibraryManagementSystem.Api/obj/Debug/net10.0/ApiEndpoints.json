@@ -122,6 +122,16 @@
   },
   {
     "ContainingType": "LibraryManagementSystem.Api.Contollers.BorrowsController",
+    "Method": "GetAllBorrows",
+    "RelativePath": "api/Borrows",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementSystem.Api.Contollers.BorrowsController",
     "Method": "Borrow",
     "RelativePath": "api/Borrows",
     "HttpMethod": "POST",
@@ -131,6 +141,22 @@
       {
         "Name": "dto",
         "Type": "LibraryManagementSystem.Application.DTOs.Borrow.BorrowRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementSystem.Api.Contollers.BorrowsController",
+    "Method": "GetBorrowById",
+    "RelativePath": "api/Borrows/{borrowId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "borrowId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -155,6 +181,58 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementSystem.Api.Contollers.BorrowsController",
+    "Method": "GetByBookId",
+    "RelativePath": "api/Borrows/book/{bookId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementSystem.Api.Contollers.BorrowsController",
+    "Method": "GetCurrentBorrows",
+    "RelativePath": "api/Borrows/current",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementSystem.Api.Contollers.BorrowsController",
+    "Method": "GetByMember",
+    "RelativePath": "api/Borrows/member/{memberId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LibraryManagementSystem.Api.Contollers.BorrowsController",
+    "Method": "GetMemberBorrows",
+    "RelativePath": "api/Borrows/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
