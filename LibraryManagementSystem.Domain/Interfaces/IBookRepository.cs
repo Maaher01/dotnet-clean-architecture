@@ -10,5 +10,6 @@ namespace LibraryManagementSystem.Domain.Interfaces
         Task AddAsync(Book book);
         Task UpdateAsync(Book book);
         Task DeleteAsync(Book book);
+        Task<IEnumerable<Book>> SearchAsync(string? keyword, bool? availableOnly);
     }
 }

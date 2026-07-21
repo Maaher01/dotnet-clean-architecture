@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.Application.DTOs.Books;
+﻿using LibraryManagementSystem.Application.DTOs.Book;
+using LibraryManagementSystem.Application.DTOs.Books;
 using LibraryManagementSystem.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -29,6 +30,14 @@ namespace LibraryManagementSystem.Api.Contollers
         public async Task<IActionResult> GetAvailable()
         {
             var books = await _bookService.GetAvailableBooksAsync();
+            return Ok(books);
+        }
+
+        [HttpGet("search")]
+        [Authorize]
+        public async Task<IActionResult> Search([FromQuery] BookSearchDto dto)
+        {
+            var books = await _bookService.SearchBookAsync(dto);
             return Ok(books);
         }
 

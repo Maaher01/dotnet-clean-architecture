@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.Application.DTOs.Books;
+﻿using LibraryManagementSystem.Application.DTOs.Book;
+using LibraryManagementSystem.Application.DTOs.Books;
 
 namespace LibraryManagementSystem.Application.Interfaces
 {
@@ -9,5 +10,6 @@ namespace LibraryManagementSystem.Application.Interfaces
         Task AddBookAsync(BookCreateUpdateDto dto);
         Task UpdateBookAsync(int id, BookCreateUpdateDto dto);
         Task DeleteBookAsync(int id);
+        Task<IEnumerable<BookDto>> SearchBookAsync(BookSearchDto dto);
     }
 }

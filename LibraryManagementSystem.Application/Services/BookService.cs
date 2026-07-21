@@ -2,6 +2,7 @@
 using LibraryManagementSystem.Domain.Entities;
 using LibraryManagementSystem.Application.DTOs.Books;
 using LibraryManagementSystem.Application.Interfaces;
+using LibraryManagementSystem.Application.DTOs.Book;
 
 namespace LibraryManagementSystem.Application.Services
 {
@@ -38,6 +39,19 @@ namespace LibraryManagementSystem.Application.Services
                 TotalCopies = b.TotalCopies,
                 AvailableCopies = b.AvailableCopies
             });
+        }
+
+        public async Task<IEnumerable<BookDto>> SearchBookAsync(BookSearchDto dto)
+        {
+            return (await _books.SearchAsync(dto.Keyword, dto.AvailableOnly))
+                .Select(b => new BookDto
+                {
+                    Id = b.Id,
+                    Title = b.Title,
+                    Author = b.Author,
+                    TotalCopies = b.TotalCopies,
+                    AvailableCopies = b.AvailableCopies
+                });
         }
 
         public async Task AddBookAsync(BookCreateUpdateDto dto)
