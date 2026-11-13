@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C256909C-DED7-407D-9A1A-9675D084D716}|LibraryManagementSystem.Domain\\LibraryManagementSystem.Domain.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.domain\\interfaces\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C256909C-DED7-407D-9A1A-9675D084D716}|LibraryManagementSystem.Domain\\LibraryManagementSystem.Domain.csproj|solutionrelative:librarymanagementsystem.domain\\interfaces\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E198560D-769B-4C00-BE81-7ADBB9836F8F}|LibraryManagementSystem.Persistence\\LibraryManagementSystem.Persistence.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.persistence\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E198560D-769B-4C00-BE81-7ADBB9836F8F}|LibraryManagementSystem.Persistence\\LibraryManagementSystem.Persistence.csproj|solutionrelative:librarymanagementsystem.persistence\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.application\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|solutionrelative:librarymanagementsystem.application\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.application\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF0C88E3-AB27-4421-9D7F-CB5BBCEF5C96}|LibraryManagementSystem.Application\\LibraryManagementSystem.Application.csproj|solutionrelative:librarymanagementsystem.application\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C256909C-DED7-407D-9A1A-9675D084D716}|LibraryManagementSystem.Domain\\LibraryManagementSystem.Domain.csproj|d:\\librarymanagementsystem\\librarymanagementsystem.domain\\interfaces\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C256909C-DED7-407D-9A1A-9675D084D716}|LibraryManagementSystem.Domain\\LibraryManagementSystem.Domain.csproj|solutionrelative:librarymanagementsystem.domain\\interfaces\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Domain\\Interfaces\\IBookRepository.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem.Domain\\Interfaces\\IBookRepository.cs",
               "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Domain\\Interfaces\\IBookRepository.cs",
               "RelativeToolTip": "LibraryManagementSystem.Domain\\Interfaces\\IBookRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T19:15:04.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\Interfaces\\IBookService.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem.Application\\Interfaces\\IBookService.cs",
-              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\Interfaces\\IBookService.cs",
-              "RelativeToolTip": "LibraryManagementSystem.Application\\Interfaces\\IBookService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T19:14:22.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T08:04:55.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "BookService.cs",
               "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\Services\\BookService.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem.Application\\Services\\BookService.cs",
               "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Application\\Services\\BookService.cs",
               "RelativeToolTip": "LibraryManagementSystem.Application\\Services\\BookService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowDEAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T18:49:18.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Persistence\\Repositories\\BookRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem.Persistence\\Repositories\\BookRepository.cs",
-              "ToolTip": "D:\\LibraryManagementSystem\\LibraryManagementSystem.Persistence\\Repositories\\BookRepository.cs",
-              "RelativeToolTip": "LibraryManagementSystem.Persistence\\Repositories\\BookRepository.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T16:29:00.64Z",
+              "WhenOpened": "2026-07-26T09:02:35.307Z",
               "EditorCaption": ""
             }
           ]
